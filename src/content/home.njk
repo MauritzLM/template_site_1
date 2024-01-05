@@ -1,6 +1,114 @@
 ---
 title: Home Page
 layout: layouts/base.njk
+permalink: '/'
 ---
 
-<h1>Hello</h1>
+{# stylesheet link #}
+ {% block head %}
+ <link rel="stylesheet" href="../assets/css/home.css">
+ {% endblock %}
+
+{# hero section #}
+ <section class="hero">
+
+   <h1>{{title}}</h1>
+
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+   <a href="#">Get started</a>
+
+ </section>
+
+{# services section #}
+ <section class="services">
+
+    <h2>Services</h2>
+
+    <div class="service-cards">
+        <div class="service">
+              {# svg #}
+              <h3>Service</h3>
+              <p>description of service</p>
+        </div>
+
+        <div class="service">
+              {# svg #}
+              <h3>Service</h3>
+              <p>description of service</p>
+        </div>
+
+        <div class="service">
+              {# svg #}
+              <h3>Service</h3>
+              <p>description of service</p>
+        </div>
+     <div>
+
+ </section>
+
+{# company info section #}
+ <section class="company-info">
+
+       <h2>Info about company</h2>
+       <p>In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis.</p>
+
+       <a href="#">Learn more</a>
+
+ </section>
+
+{# additional info section #}
+ <section class="product-info">
+    
+        <h2>Info about product</h2>
+        <h3>sub-heading</h3>
+
+        <ul>
+            <li>In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis.</li>
+            <li>In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis.</li>
+            <li>In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis.</li>
+        </ul>
+
+        <a href="#">Learn more</a>
+
+ </section>
+
+{# testimonials #}
+ <section class="testimonials">
+
+    <h2>Testimonials</h2>
+
+    <div class="testimonial">
+        {# img #}
+       <p>"The performance boost is incredible, and their seamless migration and attentive customer support made the switch painless.
+         Now I can focus on my content while they takes care of the rest.”</p>
+
+         <hr/>
+
+         <p>Client name</p>
+         <p>Company</p>
+    </div>
+
+    <div class="testimonial">
+        {# img #}
+       <p>"The performance boost is incredible, and their seamless migration and attentive customer support made the switch painless.
+         Now I can focus on my content while they takes care of the rest.”</p>
+
+         <hr/>
+
+         <p>Client name</p>
+         <p>Company</p>
+    </div>
+
+    <div class="testimonial">
+        {# img #}
+       <p>"The performance boost is incredible, and their seamless migration and attentive customer support made the switch painless.
+         Now I can focus on my content while they takes care of the rest.”</p>
+
+         <hr/>
+
+         <p>Client name</p>
+         <p>Company</p>
+    </div>
+
+ </section>
