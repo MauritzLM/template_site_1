@@ -32,9 +32,27 @@
     </button>
 
      <ul>
-       <li><a href="#">Home</a></li>
-       <li><a href="#">Product</a></li>
-       <li><a href="#">About</a></li>
+      
+              <!-- Loop through all pages with a eleventyNavigation in the frontmatter -->
+                    
+
+                    <li>
+                        <a href="/" class="">Home</a>
+                    </li>
+
+                    
+
+                    <li>
+                        <a href="/product" class="">Product</a>
+                    </li>
+
+                    
+
+                    <li>
+                        <a href="/about" class=" cs-active ">About</a>
+                    </li>
+
+                    
      </ul>
 
      <a href="#">Get started</a>
@@ -200,9 +218,27 @@
       <div>
          <h3>Sitemap</h3>
          <ul>
-           <li><a href="#">Home</a></li>
-           <li><a href="#">Product</a></li>
-           <li><a href="#">About</a></li>
+          
+              <!-- Loop through all pages with a eleventyNavigation in the frontmatter -->
+                    
+
+                    <li>
+                        <a href="/" class="">Home</a>
+                    </li>
+
+                    
+
+                    <li>
+                        <a href="/product" class="">Product</a>
+                    </li>
+
+                    
+
+                    <li>
+                        <a href="/about" class=" cs-active ">About</a>
+                    </li>
+
+                    
         </ul>
       </div>
 
