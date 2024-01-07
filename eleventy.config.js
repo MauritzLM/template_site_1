@@ -1,3 +1,4 @@
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets");
@@ -9,6 +10,8 @@ module.exports = function(eleventyConfig) {
             day: "numeric"
         });
     });
+
+    eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
     return {
         dir: {
