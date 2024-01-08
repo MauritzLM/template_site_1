@@ -1,1 +1,141 @@
 /* styles for the homepage */
+section {
+   h1+p, h2+p {
+        margin: 2.5em 0;
+    }
+}
+
+/* button style */
+.cs-button {
+    display: block;
+    width: 100%;
+    /* margin: 2em 0; */
+    text-align: center;
+}
+
+/* HERO SECTION */
+ /* .hero {
+    
+    p {
+        font-size: 1.1rem;
+    }
+    
+}  */
+
+/* SERVICES SECTION */
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+
+    .service-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+
+        .service {
+            text-align: center;
+        
+            svg {
+                width: 50px;
+                height: 50px;
+                fill: gray;
+            }
+        }
+    }
+}
+
+/* COMPANY INFO SECTION */
+.company-info {
+    img {
+        margin-bottom: 1em;
+        border-radius: 10px;
+    }
+
+    .cs-button {
+        margin-bottom: 2em;
+    }
+}
+
+/* PRODUCT INFO SECTION */
+.product-info {
+
+    svg {
+        width: 100%;
+        height: auto;
+        fill: var(--primary-color);
+        margin-bottom: 1em;
+    }
+
+    h3 {
+        margin: 2em 0;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+
+        div {
+            /* display: flex;
+            flex-direction: row; */
+
+            svg {
+                width: 24px;
+                height: 24px;
+                fill: black;
+                margin: 0;
+                background-color: #d9d9d9;
+                border-radius: 50%;
+                float: left;
+                
+            }
+            p {
+                margin: 0;
+                margin-left: 2.4em;
+                font-size: .9rem;
+            }
+        }
+        
+    }
+
+    .cs-button {
+        margin: 2em 0;
+    }
+}
+
+/* TESIMONIALS SECTION */
+.testimonials {
+    margin-bottom: 2.5em;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        margin-top: 2em;
+
+        .testimonial {
+            border: 1px solid #d9d9d9;
+            padding: 1em;
+            border-radius: 10px;
+
+            svg {
+                height: 50px;
+                width: 50px;
+            }
+
+            div {
+                height: 1px;
+                width: 100%;
+                background-color: #d9d9d9;
+            }
+
+            .name {
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
