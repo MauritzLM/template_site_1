@@ -83,7 +83,7 @@ button {
     background-color: black;
     color: white;
     padding: .7em .9em;
-    border-radius: 10px;
+    border-radius: 20px;
     font-weight: 500;
 }
 
@@ -104,6 +104,11 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 1em 1.5em;
+
+    svg {
+        width: 50px;
+        height: 50px;
+    }
 
     .navigation {
         position: fixed;
@@ -156,13 +161,13 @@ nav {
         background-color: rgba(255, 255, 255, 0);
     } */
 
-    .close-nav-button {
+    /* .close-nav-button {
         
         svg {
             width: 50px;
             height: 50px;
         }
-    }
+    } */
 
     /* mobile nav toggle class */
     .show-menu {
@@ -178,10 +183,68 @@ footer {
 
 
     .call-to-action {
+        text-align: center;
+        margin-bottom: 4em;
+
+        h3 {
+            font-size: 1.5em;
+        }
+        
         form {
+            /* display: flex;
+            flex-direction: column;
+            gap: .5em; */
+
+            input {
+                padding: .7em .9em;
+                border-radius: 20px;
+                border: none;
+                font: inherit;
+                display: block;
+                width: 100%;
+                margin-bottom: 1em;
+            }
             .cs-button {
-                width: auto;
+                width: 100%;
                 display: initial;
+            }
+        }
+    }
+
+    .footer-content {
+        border-top: 2px solid white;
+        padding-top: 1.8em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+        svg {
+            height: 50px;
+            width: 50px;
+        }
+
+            .social-links {
+                margin-bottom: 1em;
+                svg {
+                    width: 30px;
+                    height: 30px;
+                }
+        }
+
+        div {
+            h3 {
+                font-size: 1rem;
+                margin-top: 0;
+            }
+
+            ul {
+                li {
+                    margin-bottom: .5em;
+
+                    a:hover {
+                        border-bottom: 2px solid;
+                    }
+                }
             }
         }
     }
