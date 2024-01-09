@@ -12,7 +12,7 @@ eleventyNavigation:
  {% endblock %}
 
  {# hero section #}
- <section>
+ <section class="hero">
 
    <h1>Product page</h1>
 
@@ -28,7 +28,7 @@ eleventyNavigation:
 
        <h3>Tier</h3>
        <p>info about product</p>
-       <p><span>$0</span> per month</p>
+       <p class="price"><span>$0</span> per month</p>
 
        <ul>
          <li>includes this</li>
@@ -41,7 +41,7 @@ eleventyNavigation:
         
        <h3>Tier</h3>
        <p>info about product</p>
-       <p><span>$5</span> per month</p>
+       <p class="price"><span>$5</span> per month</p>
 
        <ul>
          <li>includes this</li>
@@ -56,7 +56,7 @@ eleventyNavigation:
         
        <h3>Tier</h3>
        <p>info about product</p>
-       <p><span>$10</span> per month</p>
+       <p class="price"><span>$10</span> per month</p>
 
        <ul>
          <li>includes this</li>
@@ -69,7 +69,7 @@ eleventyNavigation:
         
        <h3>Tier</h3>
        <p>info about product</p>
-       <p><span>$15</span> per month</p>
+       <p class="price"><span>$15</span> per month</p>
 
        <ul>
          <li>includes this</li>
@@ -80,11 +80,11 @@ eleventyNavigation:
 
   </div>
  
-  <a href="#">Place order</a>
+  <a href="#" class="cs-button">Place order</a>
  </section>
 
  {# FAQ #}
- <section>
+ <section class="faq">
 
     <h2>Frequently asked questions</h2>
 
@@ -92,20 +92,23 @@ eleventyNavigation:
 
         <div class="faq-item">
             {# svg #}
-            <p>Question</p>
-            <p>Answer</p>
+             <img src="../assets/icons/add.svg" alt="add-icon"/>
+            <p class="question">Question</p>
+            <p class="answer hidden">Answer</p>
         </div>
 
         <div class="faq-item">
             {# svg #}
-            <p>Question</p>
-            <p>Answer</p>
+            <img src="../assets/icons/add.svg" alt="add-icon"/>
+            <p class="question">Question</p>
+            <p class="answer hidden">Answer</p>
         </div>  
 
         <div class="faq-item">
             {# svg #}
-            <p>Question</p>
-            <p>Answer</p>
+            <img src="../assets/icons/add.svg" alt="add-icon"/>
+            <p class="question">Question</p>
+            <p class="answer hidden">Answer</p>
         </div>      
 
     </div>    
