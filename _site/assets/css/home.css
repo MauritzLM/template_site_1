@@ -5,6 +5,7 @@ section {
     }
 }
 
+/* button style */
 .cs-button {
     display: block;
     width: 100%;
@@ -12,14 +13,16 @@ section {
     text-align: center;
 }
 
- /* .hero {
+/* HERO SECTION */
+  .hero {
     
     p {
-        font-size: 1.1rem;
+        text-align: center;
     }
     
-}  */
+}  
 
+/* SERVICES SECTION */
 .services {
     display: flex;
     flex-direction: column;
@@ -44,6 +47,7 @@ section {
     }
 }
 
+/* COMPANY INFO SECTION */
 .company-info {
     img {
         margin-bottom: 1em;
@@ -55,6 +59,7 @@ section {
     }
 }
 
+/* PRODUCT INFO SECTION */
 .product-info {
 
     svg {
@@ -101,6 +106,7 @@ section {
     }
 }
 
+/* TESIMONIALS SECTION */
 .testimonials {
     margin-bottom: 2.5em;
 
