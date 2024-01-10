@@ -18,16 +18,17 @@ document.querySelector(".close-nav-button").addEventListener('click', () => {
 
 
 // FAQ toggle
-
+// select elements
 const faqItems = document.querySelectorAll(".faq-item");
 const images = document.querySelectorAll(".faq-item img");
 const answers = document.querySelectorAll(".faq-item .answer");
 
+// loop over array and add eventlistener
 for (let i = 0; i < faqItems.length; i++) {
       faqItems[i].addEventListener("click", (e) => {
+        // toggle hidden class on answer
         answers[i].classList.toggle("hidden");
-        // update image src*
+        // update image src
         answers[i].classList.contains("hidden") ? images[i].src = "../assets/icons/add.svg" : images[i].src = "../assets/icons/remove.svg";
-        console.log(e);
       });
 };

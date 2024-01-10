@@ -11,8 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/root.css">
-
-    
+    <link rel="stylesheet" href=../assets/css/about.css>
     
     <script defer src="../../assets/js/index.js"></script>
 
@@ -74,11 +73,7 @@
 
 
     <main>
-        
- 
- <link rel="stylesheet" href="../assets/css/about.css">
- 
-
+       
 
 <section class="hero">
     <h1>About page</h1>
@@ -88,9 +83,10 @@
           Nulla pharetra diam sit amet nisl suscipit. Tortor vitae purus faucibus ornare suspendisse sed. Sed ullamcorper morbi tincidunt ornare.
          Ac tortor vitae purus faucibus ornare suspendisse sed. Maecenas pharetra convallis posuere morbi leo urna. Nec ultrices dui sapien eget mi proin sed libero.</p>
 
-    <div class="">
+    <div class="hero-info">
         
         
+        <img src="../assets/images/mission.png" alt=""/>
 
         <div>
             <h2>Mission</h2>
@@ -103,16 +99,19 @@
         </div>
     </div>     
 
-<section>
+</section>
 
 
 
 
-<section class="">
+<section class="info-section">
 
-   <h2>Our approach</h2>
+  <div>
+    <h2>Our approach</h2>
 
-   <p>In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis.</p>
+    <p>In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis.</p>
+
+   </div>
 
    <div class="cards-container">
          
@@ -183,14 +182,14 @@
 
     <div>
         <label for="message">your message</label>
-        <textarea id="message" name="message"></textarea>
+        <textarea id="message" name="message" rows="5" cols="10"></textarea>
     </div>
 
     <button class="cs-button">submit</button>      
 
   </form>
 
-</section>    
+</section>
     </main>
     
     
