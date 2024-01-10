@@ -35,20 +35,24 @@ body {
     margin: 0;
 }
 
-main, footer {
+/* main, footer {
     padding: 1em 1.5em;
-}
+} */
 
 main {
     display: flex;
     flex-direction: column;
-    gap: 2.5em;
+    gap: 3em;
+}
+
+nav, section {
+    width: 90%;
+    margin: auto;
 }
 
 /* typography */
 h1 {
     text-align: center;
-    margin-top: 0;
     font-size: var(--headerFontSize);
 }
 
@@ -103,7 +107,7 @@ img {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 1em 1.5em;
+    padding: 1em 0;
 
     svg {
         width: 50px;
@@ -180,11 +184,15 @@ nav {
 /* FOOTER */
 footer {
     background-color: var(--footer-background-color);
+    padding-bottom: 1em;
 
 
     .call-to-action {
         text-align: center;
-        margin-bottom: 4em;
+        width: 90%;
+        margin: auto;
+        padding-top: 1em;
+        padding-bottom: 4em;
 
         h3 {
             font-size: 1.5em;
@@ -217,6 +225,8 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 2em;
+        width: 90%;
+        margin: auto;
 
         svg {
             height: 50px;

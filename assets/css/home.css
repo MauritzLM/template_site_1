@@ -108,7 +108,7 @@ section {
 
 /* TESIMONIALS SECTION */
 .testimonials {
-    margin-bottom: 2.5em;
+    margin-bottom: 4em;
 
     .container {
         display: flex;
@@ -118,7 +118,7 @@ section {
 
         .testimonial {
             border: 1px solid #d9d9d9;
-            padding: 1em;
+            padding: 1.2em;
             border-radius: 10px;
 
             svg {
