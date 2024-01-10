@@ -5,11 +5,8 @@ permalink: '/about'
 eleventyNavigation:
    key: About 
    order: 300
+stylesheet: "../assets/css/about.css"   
 ---
-{# stylesheet link #}
- {% block head %}
- <link rel="stylesheet" href="../assets/css/about.css">
- {% endblock %}
 
 {# hero section #}
 <section class="hero">
@@ -20,9 +17,10 @@ eleventyNavigation:
           Nulla pharetra diam sit amet nisl suscipit. Tortor vitae purus faucibus ornare suspendisse sed. Sed ullamcorper morbi tincidunt ornare.
          Ac tortor vitae purus faucibus ornare suspendisse sed. Maecenas pharetra convallis posuere morbi leo urna. Nec ultrices dui sapien eget mi proin sed libero.</p>
 
-    <div class="">
+    <div class="hero-info">
         
         {# img #}
+        <img src="../assets/images/mission.png" alt=""/>
 
         <div>
             <h2>Mission</h2>
@@ -35,16 +33,19 @@ eleventyNavigation:
         </div>
     </div>     
 
-<section>
+</section>
 
 
 {# our approach #}
 
-<section class="">
+<section class="info-section">
 
-   <h2>Our approach</h2>
+  <div>
+    <h2>Our approach</h2>
 
-   <p>In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis.</p>
+    <p>In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis.</p>
+
+   </div>
 
    <div class="cards-container">
          
@@ -115,11 +116,11 @@ eleventyNavigation:
 
     <div>
         <label for="message">your message</label>
-        <textarea id="message" name="message"></textarea>
+        <textarea id="message" name="message" rows="5" cols="10"></textarea>
     </div>
 
     <button class="cs-button">submit</button>      
 
   </form>
 
-</section>    
+</section>

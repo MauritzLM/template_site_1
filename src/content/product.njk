@@ -5,12 +5,16 @@ permalink: '/product'
 eleventyNavigation:
    key: Product 
    order: 200
+stylesheet: "../assets/css/product.css"
 ---
-{# stylesheet link #}
- {% block head %}
- <link rel="stylesheet" href="../assets/css/product.css">
- {% endblock %}
 
+
+{# stylesheet link #}
+ {# {% block head %}
+ <link rel="stylesheet" href="../assets/css/product.css">
+ {% endblock %} #}
+
+{% block body %}
  {# hero section #}
  <section class="hero">
 
@@ -114,3 +118,4 @@ eleventyNavigation:
     </div>    
 
  </section>
+ {% endblock %}
