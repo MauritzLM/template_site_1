@@ -11,8 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/root.css">
-
-    {% block head %}{% endblock %}
+    <link rel="stylesheet" href={{ stylesheet }}>
     
     <script defer src="../../assets/js/index.js"></script>
 
@@ -29,7 +28,7 @@
 
 
     <main>
-        {{content | safe}}
+       {{ content | safe }}
     </main>
     
     {% include '../components/footer.njk' %}
