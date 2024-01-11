@@ -1,6 +1,8 @@
 /* styles for the homepage */
 section {
-   h1+p, h2+p {
+
+    h1+p,
+    h2+p {
         margin: 2.5em 0;
     }
 }
@@ -13,14 +15,32 @@ section {
     text-align: center;
 }
 
+
+
 /* HERO SECTION */
-  .hero {
-    
+.hero {
+    margin-top: 0;
+
     p {
         text-align: center;
+        max-width: 400px;
+        margin: auto;
+        margin-bottom: 2em;
     }
-    
-}  
+
+    .cs-button {
+        margin: auto;
+    }
+
+}
+
+/* desktop */
+@media screen and (min-width: 1023px) {
+    .hero {
+        margin-top: 2em;
+    }
+}
+
 
 /* SERVICES SECTION */
 .services {
@@ -37,7 +57,7 @@ section {
 
         .service {
             text-align: center;
-        
+
             svg {
                 width: 50px;
                 height: 50px;
@@ -47,64 +67,162 @@ section {
     }
 }
 
+/* tablet */
+@media screen and (min-width: 600px) {
+    .services {
+        .service-cards {
+            gap: 3em;
+
+            .service {
+                svg {
+                    height: 70px;
+                    width: 70px;
+                }
+            }
+        }
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1023px) {
+    .services {
+        gap: 6em;
+
+        .service-cards {
+            width: 90%;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}
+
 /* COMPANY INFO SECTION */
 .company-info {
+    text-align: center;
+
     img {
         margin-bottom: 1em;
         border-radius: 10px;
+        max-width: 600px;
     }
 
-    .cs-button {
-        margin-bottom: 2em;
+    div {
+        text-align: center;
+        max-width: 450px;
+        margin: auto;
+
+        /* p {
+            margin: auto;
+        } */
+
+        .cs-button {
+            margin: auto;
+            margin-bottom: 2em;
+            margin-top: 2em;
+        }
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1023px) {
+    .company-info {
+        display: flex;
+        justify-content: space-between;
+
+         img {
+            width: auto;
+            margin-bottom: 0;
+            height: 60%;
+        } 
+
+        div {
+            text-align: left;
+            margin: 0;
+
+            h2 {
+                text-align: left;
+            }
+
+            .cs-button {
+                margin: 2em 0;
+            }
+
+        }
     }
 }
 
 /* PRODUCT INFO SECTION */
 .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     svg {
-        width: 100%;
+        max-width: 90%;
         height: auto;
         fill: var(--primary-color);
         margin-bottom: 1em;
     }
 
-    h3 {
-        margin: 2em 0;
-    }
-
-    .list {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5em;
-
-        div {
-            /* display: flex;
-            flex-direction: row; */
-
-            svg {
-                width: 24px;
-                height: 24px;
-                fill: black;
-                margin: 0;
-                background-color: #d9d9d9;
-                border-radius: 50%;
-                float: left;
-                
-            }
-            p {
-                margin: 0;
-                margin-left: 2.4em;
-                font-size: .9rem;
-            }
+    .info-text {
+        max-width: 500px;
+        h3 {
+            margin: 2em 0;
         }
-        
-    }
 
-    .cs-button {
-        margin: 2em 0;
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+
+            div {
+                /* display: flex;
+                flex-direction: row; */
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    fill: black;
+                    margin: 0;
+                    background-color: #d9d9d9;
+                    border-radius: 50%;
+                    float: left;
+
+                }
+
+                p {
+                    margin: 0;
+                    margin-left: 2.4em;
+                    font-size: .9rem;
+                }
+            }
+
+        }
+
+        .cs-button {
+            margin: 2em 0;
+        }
     }
 }
+
+/* desktop */
+@media screen and (min-width: 1023px) {
+    .product-info {
+
+        flex-direction: row;
+        justify-content: space-between;
+
+        svg {
+            order: 1;
+            width: 500px;
+        }
+        /* .info-text {
+
+        } */
+    }
+}
+
+
 
 /* TESIMONIALS SECTION */
 .testimonials {
@@ -137,5 +255,21 @@ section {
                 font-size: 1.2rem;
             }
         }
+    }
+}
+
+/* desktop */
+@media  screen and (min-width: 1023px) {
+    .testimonials {
+        .container {
+            flex-direction: row;
+        }
+    }
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 400px) {
+    .cs-button {
+        width: 250px;
     }
 }
