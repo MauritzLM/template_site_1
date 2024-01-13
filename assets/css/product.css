@@ -2,26 +2,35 @@
 
 /* HERO SECTION */
 .hero {
-    text-align: center;
-}
+    p {
+        text-align: center;
+    }
 
-/* PRODUCTS SECTION */
-.products {
     .products-container {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(300px, 400px);
         gap: 2em;
+        margin: auto;
+        margin-top: 5em;
+        width: fit-content;
 
         .product-card {
             background-color: #d9d9d9;
             border-radius: 20px;
             padding: 1.5em;
             /* font-size: 1.1rem; */
+            /* width: 80%; */
+            /* align-self: center;
+            justify-self: center; */
             max-width: 460px;
 
             h3 {
                 font-size: 1.5rem;
                 margin-top: 0;
+            }
+
+            p {
+                text-align: initial;
             }
 
             .price {
@@ -48,13 +57,28 @@
             }
         }
 
-        
+
     }
 
     .cs-button {
         display: block;
         margin-top: 1.5em;
         text-align: center;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1023px) {
+    .hero {
+        .products-container {
+            grid-template-columns: 400px 400px;
+
+            /* .product-card {
+                width: 460px;
+            } */
+        }
+
+
     }
 }
 
@@ -66,28 +90,57 @@
     flex-direction: column;
     gap: 2em;
 
+    .questions-container {
+        width: 90%;
+        /* margin: auto; */
 
-    .faq-item {
-        border-bottom: 1px solid #d9d9d9;
-        cursor: pointer;
+        .faq-item {
+            border-bottom: 1px solid #d9d9d9;
+            cursor: pointer;
 
-        img {
-            height: 30px;
-            width: 30px;
-            float: right;
+            img {
+                height: 30px;
+                width: 30px;
+                float: right;
+            }
+
+            .question {
+                font-weight: 500;
+            }
+
+            /* .answer {
+                transition: all .2s ease-in;
+            } */
         }
-
-        .question {
-            font-weight: 500;
-        }
-
-        /* .answer {
-            transition: all .2s ease-in;
-        } */
     }
 }
+
+/* desktop */
+@media screen and (min-width: 1023px) {
+    .faq {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            width: 400px;
+        }
+        .questions-container {
+            width: 500px;
+        }
+    }
+}
+
 
 .hidden {
     opacity: 0;
     height: 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 400px) {
+    .cs-button {
+        width: 250px;
+        margin: auto;
+    }
 }
