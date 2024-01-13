@@ -20,6 +20,9 @@ section {
 /* HERO SECTION */
 .hero {
     margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     p {
         text-align: center;
@@ -35,12 +38,11 @@ section {
 }
 
 /* desktop */
-@media screen and (min-width: 1023px) {
+/* @media screen and (min-width: 1023px) {
     .hero {
         margin-top: 2em;
     }
-}
-
+} */
 
 /* SERVICES SECTION */
 .services {
@@ -57,6 +59,10 @@ section {
 
         .service {
             text-align: center;
+            padding: 1em;
+            border: 1px solid #d9d9d9;
+            border-radius: 20px;
+            max-width: 340px;
 
             svg {
                 width: 50px;
@@ -86,7 +92,7 @@ section {
 /* desktop */
 @media screen and (min-width: 1023px) {
     .services {
-        gap: 6em;
+        gap: 4em;
 
         .service-cards {
             width: 90%;
@@ -103,7 +109,7 @@ section {
     img {
         margin-bottom: 1em;
         border-radius: 10px;
-        max-width: 600px;
+        max-width: 500px;
     }
 
     div {
@@ -128,11 +134,13 @@ section {
     .company-info {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        gap: 2em;
 
          img {
-            width: auto;
+           
             margin-bottom: 0;
-            height: 60%;
+            
         } 
 
         div {
@@ -158,7 +166,7 @@ section {
     align-items: center;
 
     svg {
-        max-width: 90%;
+        width: 90%;
         height: auto;
         fill: var(--primary-color);
         margin-bottom: 1em;
@@ -205,6 +213,15 @@ section {
     }
 }
 
+/* tablet */
+@media screen and (min-width: 600px) {
+    .product-info {
+        svg {
+            max-width: 500px;
+        }
+    }
+}
+
 /* desktop */
 @media screen and (min-width: 1023px) {
     .product-info {
@@ -226,18 +243,20 @@ section {
 
 /* TESIMONIALS SECTION */
 .testimonials {
-    margin-bottom: 4em;
+    /* margin-bottom: 4em; */
 
     .container {
         display: flex;
         flex-direction: column;
         gap: 1.5em;
         margin-top: 2em;
+        align-items: center;
 
         .testimonial {
             border: 1px solid #d9d9d9;
             padding: 1.2em;
             border-radius: 10px;
+            max-width: 300px;
 
             svg {
                 height: 50px;
@@ -261,8 +280,12 @@ section {
 /* desktop */
 @media  screen and (min-width: 1023px) {
     .testimonials {
+        h2 {
+            margin-bottom: 2em;
+        }
         .container {
             flex-direction: row;
+            justify-content: space-between;
         }
     }
 }

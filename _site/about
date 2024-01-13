@@ -88,15 +88,18 @@
         
         <img src="../assets/images/mission.png" alt=""/>
 
-        <div>
-            <h2>Mission</h2>
-            <p>In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis.</p>
-        </div>
+       <div class="info-text">
+         <div>
+             <h2>Mission</h2>
+             <p>In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis.</p>
+         </div>
 
-        <div>
-            <h2>Vision</h2>
-            <p>In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis.</p>
-        </div>
+         <div>
+             <h2>Vision</h2>
+             <p>In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis.</p>
+         </div>
+
+       </div>
     </div>     
 
 </section>
@@ -106,7 +109,7 @@
 
 <section class="info-section">
 
-  <div>
+  <div class="intro-text">
     <h2>Our approach</h2>
 
     <p>In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis.</p>
@@ -233,7 +236,7 @@
           </div>
       </div>
 
-      <div>
+      <div class="sitemap">
          <h3>Sitemap</h3>
          <ul>
           
