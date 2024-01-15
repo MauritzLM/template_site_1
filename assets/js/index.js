@@ -6,14 +6,15 @@ let mobileNav = document.querySelector(".navigation");
 
 // show menu
 document.querySelector(".mobile-nav-button").addEventListener('click', (e) => {
-
-    mobileNav.classList.toggle("show-menu");
-
+  // set aria-expanded, add class
+    mobileNav.setAttribute("aria-expanded", "true");
+    mobileNav.classList.add("show-menu");
 });
 
 // close menu
 document.querySelector(".close-nav-button").addEventListener('click', () => {
-    mobileNav.classList.toggle("show-menu");
+  mobileNav.setAttribute("aria-expanded", "false");
+    mobileNav.classList.remove("show-menu");
 });
 
 
