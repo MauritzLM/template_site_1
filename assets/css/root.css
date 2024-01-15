@@ -8,13 +8,13 @@
 :root {
     --primary-background-color: white;
     --primary-text-color: #1a1a1b;
-    --primary-color: rgb(44, 177, 188);
-    --secondary-color: rgb(15, 42, 67);
+    --primary-color: #4EB19E;
+    --secondary-color: #C87937;
 
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
-    --footer-background-color: #D9D9D9;
+    --footer-background-color: #424f55;
 
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -23,10 +23,12 @@
     --bodyFontSize: 1rem;
 }
 
+/* add @font-face */
+
 
 /* GENERAL STYLES */
 html {
-    font-family: 'Raleway', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 100%;
     color: var(--primary-text-color);
 }
@@ -42,8 +44,10 @@ body {
 main {
     section {
         /* adds spacing between sections */
-        margin-top: clamp(3.75rem, 8vw, 6.25rem);
-        margin-bottom: clamp(3.75rem, 8vw, 6.25rem);
+        /* margin-top: clamp(3.75rem, 8vw, 6.25rem);
+        margin-bottom: clamp(3.75rem, 8vw, 6.25rem); */
+        margin-top: 5em;
+        margin-bottom: 5em;
     }
 }
 
@@ -64,9 +68,13 @@ h2 {
     font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
 
+h3 {
+    letter-spacing: .5px;
+}
+
 p {
     line-height: 1.3;
-}
+} 
 
 a {
     text-decoration: none;
@@ -88,9 +96,9 @@ button {
 }
 
 .cs-button {
-    background-color: black;
+    background-color: var(--primary-color);
     color: white;
-    padding: .7em .9em;
+    padding: .7em .9em .85em .9em;
     border-radius: 20px;
     font-weight: 500;
 }
@@ -123,13 +131,12 @@ nav {
         top: 0;
         right: 0;
         opacity: 0;
-        visibility: hidden;
         background-color: rgb(211, 210, 210);
         color: rgb(14, 13, 13);
         transition: .3s all;
         height: 100vh;
         width: 100vw;
-        z-index: 0;
+        z-index: -999;
         padding: 1em;
         display: flex;
         flex-direction: column;
@@ -140,17 +147,19 @@ nav {
             align-self: center;
             display: flex;
             flex-direction: column;
-            gap: 1em;
+            gap: .7em;
             margin-top: 4em;
 
             li {
                 a {
                     font-size: 1.5rem;
+                    padding-bottom: .1em;
+                    border-color: var(--primary-color);
                 }
 
 
                 a:hover {
-                    border-bottom: 2px solid;
+                    border-bottom: 2px solid var(--primary-color);
                 }
             }
         }
@@ -158,7 +167,7 @@ nav {
         .cs-button {
             align-self: center;
             display: initial;
-            width: auto;
+            width: 140px;
             margin: 2em 0;
             text-align: center;
         }
@@ -179,7 +188,6 @@ nav {
 
     /* mobile nav toggle class */
     .show-menu {
-        visibility: visible;
         opacity: 1;
         z-index: 100;
     }
@@ -236,7 +244,7 @@ nav {
 footer {
     background-color: var(--footer-background-color);
     padding-bottom: 1em;
-
+    color: white;
 
     .call-to-action {
         text-align: center;
@@ -253,11 +261,11 @@ footer {
             /* display: flex;
             flex-direction: column;
             gap: .5em; */
-            max-width: 400px;
+            max-width: 350px;
             margin: auto;
 
             input {
-                padding: .7em .9em;
+                padding: .7em .9em .9em .9em;
                 border-radius: 20px;
                 border: none;
                 font: inherit;
@@ -285,14 +293,22 @@ footer {
         svg {
             height: 50px;
             width: 50px;
+            fill: white;
         }
 
         .social-links {
             margin-bottom: 1em;
+            display: flex;
+            gap: .5em;
 
             svg {
                 width: 30px;
                 height: 30px;
+                fill: white;
+            }
+
+            svg:hover {
+                fill: var(--primary-color);
             }
         }
 
@@ -306,8 +322,14 @@ footer {
                 li {
                     margin-bottom: .5em;
 
+                    a {
+                        padding-bottom: .1em;
+                        border-color: var(--primary-color);
+                        color: white;
+                    }
+
                     a:hover {
-                        border-bottom: 2px solid;
+                        border-bottom: 2px solid var(--primary-color);
                     }
                 }
             }
@@ -331,12 +353,12 @@ footer {
         max-width: calc(1280 / 16 * 1rem);
     }
 
-      section {
-        min-height: 50vh;
-    }  
+    section {
+        min-height: 30vh;
+    }
 
     footer {
-        
+
         .footer-content,
         .call-to-action {
             max-width: 1200px;
@@ -358,5 +380,11 @@ footer {
                 justify-self: center;
             }
         }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section {
+        min-height: 50vh;
     }
 }

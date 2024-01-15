@@ -67,7 +67,7 @@ section {
             svg {
                 width: 50px;
                 height: 50px;
-                fill: gray;
+                fill: var(--primary-color);
             }
         }
     }
@@ -109,7 +109,7 @@ section {
     img {
         margin-bottom: 1em;
         border-radius: 10px;
-        max-width: 500px;
+        max-width: 400px;
     }
 
     div {
@@ -135,7 +135,7 @@ section {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 2em;
+        gap: 3em;
 
          img {
            
@@ -159,6 +159,14 @@ section {
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .company-info {
+        img {
+            max-width: 500px;
+        }
+    }
+}
+
 /* PRODUCT INFO SECTION */
 .product-info {
     display: flex;
@@ -174,6 +182,9 @@ section {
 
     .info-text {
         max-width: 500px;
+        h2 {
+            text-align: left;
+        }
         h3 {
             margin: 2em 0;
         }
@@ -190,9 +201,9 @@ section {
                 svg {
                     width: 24px;
                     height: 24px;
-                    fill: black;
+                    fill: white;
                     margin: 0;
-                    background-color: #d9d9d9;
+                    background-color: var(--primary-color);
                     border-radius: 50%;
                     float: left;
 
@@ -201,7 +212,7 @@ section {
                 p {
                     margin: 0;
                     margin-left: 2.4em;
-                    font-size: .9rem;
+                    font-size: .95rem;
                 }
             }
 
@@ -214,13 +225,13 @@ section {
 }
 
 /* tablet */
-@media screen and (min-width: 600px) {
+ @media screen and (min-width: 600px) {
     .product-info {
         svg {
-            max-width: 500px;
+            max-width: 400px;
         }
     }
-}
+} 
 
 /* desktop */
 @media screen and (min-width: 1023px) {
@@ -228,10 +239,11 @@ section {
 
         flex-direction: row;
         justify-content: space-between;
+        gap: 3em;
 
         svg {
             order: 1;
-            width: 500px;
+            max-width: 500px;
         }
         /* .info-text {
 
@@ -293,6 +305,6 @@ section {
 /* MEDIA QUERIES */
 @media screen and (min-width: 400px) {
     .cs-button {
-        width: 250px;
+        width: 170px;
     }
 }

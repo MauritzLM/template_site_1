@@ -15,9 +15,10 @@
         width: fit-content;
 
         .product-card {
-            background-color: #d9d9d9;
+            /* background-color: #d9d9d9; */
             border-radius: 20px;
             padding: 1.5em;
+            border: 1px solid #d9d9d9;
             /* font-size: 1.1rem; */
             /* width: 80%; */
             /* align-self: center;
@@ -38,6 +39,7 @@
                     font-size: 2rem;
                     font-weight: 700;
                     margin-right: .5em;
+                    color: var(--primary-color);
                 }
             }
 
@@ -62,7 +64,7 @@
 
     .cs-button {
         display: block;
-        margin-top: 1.5em;
+        margin-top: 3em;
         text-align: center;
     }
 }
@@ -97,20 +99,25 @@
         .faq-item {
             border-bottom: 1px solid #d9d9d9;
             cursor: pointer;
+            position: relative;
+            padding: 1em 0;
 
             img {
                 height: 30px;
                 width: 30px;
-                float: right;
+                position: absolute;
+                right: 10px;
+                top: 25px;
             }
 
             .question {
                 font-weight: 500;
+                padding: 1em;
             }
 
-            /* .answer {
-                transition: all .2s ease-in;
-            } */
+             .answer {
+                padding-left: 1em;
+            } 
         }
     }
 }
@@ -121,6 +128,8 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        min-height: fit-content;
+        margin-bottom: 7em;
 
         h2 {
             width: 400px;
@@ -133,8 +142,7 @@
 
 
 .hidden {
-    opacity: 0;
-    height: 0;
+    display: none;
 }
 
 /* MEDIA QUERIES */
